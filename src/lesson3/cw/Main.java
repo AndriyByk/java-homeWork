@@ -11,29 +11,34 @@
 
 package lesson3.cw;
 
-import java.util.ArrayList;
-
 public class Main {
     public static void main(String[] args) {
         ZooClub zooClub = new ZooClub();
 
         // 1
-
         zooClub.addMember("Taras");
         zooClub.addMember("Petro");
+
+        // 2
         zooClub.addPet("Taras", "Pushock");
         zooClub.addPet("Petro", "Persik");
         zooClub.addPet("Petro", "Kokosik");
         zooClub.addPet("Petro", "Persik");
         zooClub.addPet("Petro", "Persik");
 
-        zooClub.showClub();
-        zooClub.removePet("Petro","Kokosik");
-        zooClub.showClub();
-        zooClub.removeMember("Taras");
-        zooClub.showClub();
-        zooClub.removePet("Persik");
+        // 6
         zooClub.showClub();
 
+        // 3
+        zooClub.removePet("Petro","Kokosik");
+        zooClub.showClub();
+
+        // 4
+        zooClub.removeMember("Taras");
+        zooClub.showClub();
+
+        // 5
+        zooClub.removePet("Persik");
+        zooClub.showClub();
     }
 }
